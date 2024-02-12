@@ -23,6 +23,9 @@ class MyApp extends StatelessWidget {
                   location: 'Karachi, Pakistan',
                 ),
                 ButtonSection(),
+                TextSection(
+                    description:
+                        'From Breakfast to Dessert we have you covered. Indulge in our wide variety of: 1) Bakery Goods 2) Mithai 3) Cookies & Biscuits 4) Samosas & Fried Items 5) Fast Food 6) Desserts 7) Cakes 8) Halwa Puri & Parathas')
               ],
             ),
           )),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterlayout_week3/title_section.dart';
+import 'package:flutterlayout_week3/section.dart';
 
 void main() => runApp(const MyApp());
 
@@ -18,6 +18,9 @@ class MyApp extends StatelessWidget {
           body: const SingleChildScrollView(
             child: Column(
               children: [
+                ImageSection(
+                  image: 'assets/2023-03-03.jpg',
+                ),
                 TitleSection(
                   name: 'Continental Bakery',
                   location: 'Karachi, Pakistan',

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlayout_week3/title_section.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,13 +12,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(appTitle),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text(appTitle),
+          ),
+          body: const SingleChildScrollView(
+            child: Column(
+              children: [
+                TitleSection(
+                  name: 'Continental Bakery',
+                  location: 'Karachi, Pakistan',
+                ),
+                ButtonSection(),
+              ],
+            ),
+          )),
     );
   }
 }
